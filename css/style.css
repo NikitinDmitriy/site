@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, rgb(9, 5, 78) 0%, rgb(32, 32, 194) 0%, rgba(0, 212, 255, 1) 100%);
+    padding-top: 60px;
+    padding-bottom: 100px;
+   
+}
+.flex{ 
+    display: flex;
+    margin: 60;
+    padding: 50;  
+    justify-content: space-around  
+}  
+
+.blocks{
+    display: inline-block;
+    margin: 0;
+    padding: 0; 
+}
+.end {
+    display: flex;
+    margin: 60;
+    padding: 50;  
+    justify-content: space-around;  
+    color: white;
+    background: linear-gradient(90deg, rgb(9, 5, 78) 0%, rgb(32, 32, 194) 0%, rgba(0, 212, 255, 1) 100%);
+}
+.buy {
+background-color: rgb(202, 218, 241);
+}
+.container {
+    display: flex;
+}
+.text {
+    display: flex;
+    margin-right: -373px;
+    margin-left: 300px;
+} 
+.container-row{
+    display: flex;
+    margin-right: -373px;
+    margin-left: 300px;
+}
+.multi .line {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    opacity: 0;
+    animation: blink-cursor .75s step-end infinite;
+}
+.need {
+    display: flex;
+    margin: 60;
+    padding: 50;  
+    background-color:rgb(255, 255, 255);
+    justify-content: space-around;  
+}
+.logotip:hover {
+    transform: scale(3);
+}
+.feetback{
+    background-color: rgb(202, 218, 241);
+}
+.step1 {
+    width: 900px;
+    margin: auto;
+}
+.wallpaper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+}
+.form2{
+    flex-direction: column;
+    margin: 60;
+    padding: 50;  
+    justify-content: space-around;  
+    color: rgb(0, 0, 0);
+}
+  .blocks {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.blocks:hover {
+-webkit-transform: rotate(360deg); /* Градусы поворота можно изменить по необходимости */
+    transform: rotate(360deg); /* Градусы поворота можно изменить по необходимости */
+}
+.button {
+    width: 220px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #FFD429;
+    animation: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: all 0.5;
+    font-family: 'Ubuntu', sans-serif;
+}
