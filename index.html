@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>More JavaScript</title>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link href="https://fonts.googleapis.com/cass2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <div class="step1">
+        <img class="logotip" src="../images/logo.png" alt="pic">
+        <div class="wallpaper">
+            <div class="other">
+                <h1 class="title">С помощью нас <br>
+                        вы сможете создать то, о чем</h1>
+                    <span class="title_span">желаете!</span>
+                <p class="offer_text">Наши возможности + опыт позволят Вам достичь
+                    огромного успеха. Мы верим в вас! И знаем это на
+                    все 100%. Вас не остановить!
+                </p>
+                <style>
+                    .btn {background-color: yellow;}
+                </style>
+            <a href="#" class="btn">узнать больше ...</a>
+            </div>
+            <img class="cent desktop animate__animated animate__tada" src="../images/cent.png" alt="pic">
+        </div>
+    </div>
+</header>
+<div>
+    <div class="need">
+        <h1>Что Вам необходимо?</h1>
+    </div>
+</div>
+<div class="flex">  
+
+    <div class="blocks">
+        <img class="desktop animate__animated animate__backInLeft" src="../images/1.png" alt="pic">
+        <h3>первый блок</h3>
+        <p>здесь идет текст</p>
+    </div>
+
+    <div class="blocks">
+        <img class="desktop animate__animated animate__backInUp" src="../images/2.png" alt="pic">
+        <h3>второй блок</h3>
+        <p>здесь идет текст</p>
+    </div>  
+    <div class="blocks">
+        <img class="desktop animate__animated animate__backInRight" src="../images/3.png" alt="pic">
+        <h3>третий блок</h3>
+        <p>здесь идет текст</p>
+    </div>
+
+</div>  
+
+</main>
+<section class="buy">
+    <div class="step1">
+        <div class="row">
+            <div class="text">Для оформления заказа введите данные ниже</div>
+        </div>
+        <div class="container-row">
+            <div id="order-form">
+                <h3>Форма заказа продукта или услуги</h3>
+                <form onsubmit="return OrderForm()">
+                    <input type="text" id="product" name="product" placeholder="продукт или услуга" required onchange="validateProduct()"/>
+                    <span id="product"></span> <br>
+                    <input type="text" id="e-mail" name="e-mail" placeholder="e-mail" required onchange="validateEmail()"/>
+                    <span id="e-mail"></span> <br>
+                    <input type="number" id="quantity" name="quantity" min="1" placeholder="колличество" required onchange="validateQuantity()"/>
+                    <span id="quantity"></span> <br>
+                    <button type="button" id="send2" onclick="OrderForm()" style="background-color: yellow; width: 220px; height: 45px; font-size: 16px;border: 1px">Заказать</button><br>
+                </form>
+                <div id="order-summary">
+                    <h3>Итоговые данные:</h3>
+                    <p id="selected-product"></p>
+                    <p id="selected-email"></p>
+                    <p id="selected-quantity"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="feetback">
+    <div class="step1">
+        <div class="container-row">
+            <div id="order-form">
+                <h3>Заказать обратный звонок</h3>
+                <form>
+                    <style>
+                        form label {
+                            display: inline-block;
+                            width: 150px;
+                        }
+                    </style>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required ><br><br>
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="xxx-xx-xxx" required><br><br>
+                    <button type="button" id="send2" onclick="OrderForm()" style="background-color: yellow; width: 220px; height: 45px; font-size: 16px;border: 1px">Заказать</button><br>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="end">
+    <div class="typing_text">
+        <p>© Все права защищены</p>
+    </div>
+</section>
+<script src="../jscpipt/validation.js"></script>
+</body>
+</html>
