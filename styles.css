@@ -107,3 +107,103 @@ background-color: rgb(202, 218, 241);
     transition: all 0.5;
     font-family: 'Ubuntu', sans-serif;
 }
+@media screen and (max-width: 1200px)
+
+{
+    .container {
+        width: 80%;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .header_img {
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 992px)
+
+{
+    header {
+        padding-bottom: 70px;
+    }
+
+    .container {
+        width: 720px;
+    }
+
+    .offer {
+        width: 500px;
+    }
+
+
+    .wrapper {
+        justify-content: center;
+    }
+
+    .header_img {
+        margin-top: 80px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .field {
+        width: 100%;
+    }
+
+    .button {
+        width: 113%;
+    }
+
+}
+
+@media screen and (max-width: 768px)
+
+{
+    .container {
+        width: 540px;
+    }
+
+    .wrapper {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .field {
+        width: 160%;
+    }
+
+    .blck {
+        padding-left: 28%;
+    }
+
+    .button {
+        width: 170%;
+    }
+
+}
+
+@media screen and (max-width: 576px)
+
+{
+    .container {
+        width: 90%;
+    }
+
+    .first_block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blocks {
+        width: 35%;
+    }
+
+    .button {
+        width: 170%;
+    }
