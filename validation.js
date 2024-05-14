@@ -1,32 +1,18 @@
-function orderForm(event) {
-  if ((validateProduct() && validateEmail() && validateQuantity()) === true) {
-      event.preventDefault();
-      const product = document.getElementById("product").value;
-      const email = document.getElementById("e-mail").value;
-      const quantity = document.getElementById("quantity").value;
-
-      let summaryHtml = `
-          <strong>Продукт:</strong> ${product}<br>
-          <strong>Почта:</strong> ${email}<br>
-          <strong>Количество:</strong> ${quantity}
-      `;
-  }
-}
 // Функция для обработки формы заказа
 function OrderForm() {
   // Получение значений полей формы
-  var product = document.getElementById('product').value;
-  var email = document.getElementById('e-mail').value;
-  var quantity = document.getElementById('quantity').value;
+  if ((validateProduct() && validateEmail() && validateQuantity()) === true){
+    var product = document.getElementById('product').value;
+    var email = document.getElementById('e-mail').value;
+    var quantity = document.getElementById('quantity').value;
 
-  // Обновление содержимого блока "order-summary"
-  document.getElementById('selected-product').innerText = 'Выбранный продукт: ' + product;
-  document.getElementById('selected-email').innerText = 'E-mail: ' + email;
-  document.getElementById('selected-quantity').innerText = 'Количество: ' + quantity;
-
-  // Дополнительный код для отправки данных на сервер или других действий
-
-  return false; // Чтобы предотвратить реальную отправку формы
+    // Обновление содержимого блока "order-summary"
+    document.getElementById('selected-product').innerText = 'Выбранный продукт: ' + product;
+    document.getElementById('selected-email').innerText = 'E-mail: ' + email;
+    document.getElementById('selected-quantity').innerText = 'Количество: ' + quantity;
+  } else {
+    document.getElementById("order-summary").innerHTML = "Пожалуйста, заполните все поля действительными данными.";
+  }
 }
 function validateProduct() {
   var product = document.getElementById("product").value;
